@@ -17,3 +17,18 @@ document.getElementById("site-nav").innerHTML = `
     </div>
   </details>
 `;
+// 一次只開一個選單，點其他地方會自動收起
+document.querySelectorAll(".dropdown").forEach(function (d) {
+  d.addEventListener("toggle", function () {
+    if (d.open) {
+      document.querySelectorAll(".dropdown").forEach(function (o) {
+        if (o !== d) o.open = false;
+      });
+    }
+  });
+});
+document.addEventListener("click", function (e) {
+  document.querySelectorAll(".dropdown").forEach(function (d) {
+    if (!d.contains(e.target)) d.open = false;
+  });
+});
