@@ -22,8 +22,13 @@ section { max-width: 700px; margin: 0 auto; padding: 60px 16px; }
 h1 { color: #d6457a; }
 h2 { color: #d6457a; border-bottom: 2px solid #f8bbd0; padding-bottom: 6px; }
 #home { text-align: center; }
+
+/* 圓形大頭照 */
 .avatar {
-  width: 260px; max-width: 80%;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 160px; height: 160px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background-image: url("me.jpg");
+  background-size: 400%;
+  background-position: 35% 70%;
+}
