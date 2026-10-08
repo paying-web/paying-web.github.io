@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>蔡佩穎｜閱讀心得</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
@@ -28,11 +28,23 @@
         <span>隨他們去</span>
       </button>
 
+      <button class="book-cover" onclick="document.getElementById('book2').showModal()">
+        <img src="Jungian_Psychology.jpg" alt="榮格心理學入門 封面">
+        <span>榮格心理學入門</span>
+      </button>
+
     </div>
 
     <dialog id="book1" class="book-dialog">
       <h3>隨他們去 The Let Them</h3>
       <p class="book-info">作者：梅爾．羅賓斯（Mel Robbins）｜閱讀日期：2026/10</p>
+      <p>在這裡寫你的心得。</p>
+      <form method="dialog"><button class="close-btn">關閉</button></form>
+    </dialog>
+
+    <dialog id="book2" class="book-dialog">
+      <h3>榮格心理學入門：自我重生的人生旅程</h3>
+      <p class="book-info">作者：山根久美子｜閱讀日期：2026/10</p>
       <p>在這裡寫你的心得。</p>
       <form method="dialog"><button class="close-btn">關閉</button></form>
     </dialog>
