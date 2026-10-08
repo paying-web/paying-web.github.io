@@ -23,12 +23,11 @@ h1 { color: #d6457a; }
 h2 { color: #d6457a; border-bottom: 2px solid #f8bbd0; padding-bottom: 6px; }
 #home { text-align: center; }
 
-/* 圓形大頭照 */
-.avatar {
-  width: 160px; height: 160px;
-  margin: 0 auto 16px;
-  border-radius: 50%;
-  background-image: url("me.jpg");
-  background-size: 400%;
-  background-position: 35% 70%;
+/* 照片：原本比例、圓角方形 */
+.photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 24px;
+  margin: 16px auto;
 }
