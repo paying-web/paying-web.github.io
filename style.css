@@ -33,3 +33,6 @@ h2 { color: #d6457a; border-bottom: 2px solid #f8bbd0; padding-bottom: 6px; }
   border-radius: 24px;
   margin: 0 auto 16px;
 }
+/* 內文連結 */
+section a { color: #d6457a; text-decoration: none; border-bottom: 1px dashed #d6457a; }
+section a:hover { color: #f48fb1; border-bottom-style: solid; }
