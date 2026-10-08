@@ -10,12 +10,28 @@ nav {
   padding: 20px 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-nav a {
+nav a, .dropdown summary {
   color: #d6457a; text-decoration: none; font-weight: bold;
   padding: 8px 16px; border-radius: 20px;
   background: rgba(255,255,255,0.75);
 }
-nav a:hover { background: #f8bbd0; color: white; }
+nav a:hover, .dropdown summary:hover { background: #f8bbd0; color: white; }
+
+/* 下拉選單「其他」 */
+.dropdown { position: relative; }
+.dropdown summary { list-style: none; cursor: pointer; user-select: none; }
+.dropdown summary::-webkit-details-marker { display: none; }
+.dropdown[open] summary { background: #f8bbd0; color: white; }
+.dropdown-menu {
+  position: absolute; top: calc(100% + 8px); left: 50%;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; gap: 4px;
+  background: white; padding: 8px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  z-index: 10;
+}
+.dropdown-menu a { background: none; white-space: nowrap; text-align: center; }
 
 /* 內容區塊：文字左右對齊 */
 section { max-width: 700px; margin: 0 auto; padding: 60px 16px; text-align: justify; }
