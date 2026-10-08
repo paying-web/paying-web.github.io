@@ -31,10 +31,12 @@
     h2 { color: #d6457a; border-bottom: 2px solid #f8bbd0; padding-bottom: 6px; }
     #home { text-align: center; }
     .avatar {
-      width: 260px; max-width: 80%;
-      height: auto;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 160px; height: 160px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background-image: url("me.jpg");
+      background-size: 400%;
+      background-position: 35% 70%;
     }
   </style>
 </head>
@@ -49,7 +51,7 @@
   </nav>
 
   <section id="home">
-     <img src="me.jpg" alt="蔡佩穎的照片" class="avatar">
+     <div class="avatar" role="img" aria-label="蔡佩穎的照片"></div>
     <h1>蔡佩穎</h1>
     <p>對心理學與人的故事充滿好奇的自學者。</p>
   </section>
