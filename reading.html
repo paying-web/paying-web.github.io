@@ -21,18 +21,18 @@
     <h2>閱讀心得</h2>
     <p>點選書本封面，看看我的閱讀心得 📚</p>
 
-    <div class="bookshelf">
-      <!-- 新書請貼在這一行下面，最上面的會排第一個 -->
+    <!-- 書架會依 data-date 自動排序，越晚讀完的排越前面 -->
+    <div class="bookshelf" id="bookshelf">
 
-      <button class="book-cover" onclick="document.getElementById('book2').showModal()">
-        <img src="books/Jungian%20Psychology.jpg" alt="榮格心理學入門 封面">
-        <span>榮格心理學入門</span>
+      <button class="book-cover" data-date="2026-09" onclick="document.getElementById('book1').showModal()">
+        <img src="books/The_Let_Them.jpg" alt="隨他們去 The Let Them 封面">
+        <span>隨他們去</span>
         <span class="stars">⭐️⭐️⭐️⭐️⭐️</span>
       </button>
 
-      <button class="book-cover" onclick="document.getElementById('book1').showModal()">
-        <img src="books/The_Let_Them.jpg" alt="隨他們去 The Let Them 封面">
-        <span>隨他們去</span>
+      <button class="book-cover" data-date="2025-04" onclick="document.getElementById('book2').showModal()">
+        <img src="books/Jungian%20Psychology.jpg" alt="榮格心理學入門 封面">
+        <span>榮格心理學入門</span>
         <span class="stars">⭐️⭐️⭐️⭐️⭐️</span>
       </button>
 
@@ -55,6 +55,15 @@
   </section>
 
   <script>
+    // 依閱讀日期自動排序：越晚讀完的排越前面
+    var shelf = document.getElementById("bookshelf");
+    var books = Array.from(shelf.querySelectorAll(".book-cover"));
+    books.sort(function (a, b) {
+      return b.dataset.date.localeCompare(a.dataset.date);
+    });
+    books.forEach(function (book) { shelf.appendChild(book); });
+
+    // 點視窗外面也能關閉
     document.querySelectorAll("dialog").forEach(function (d) {
       d.addEventListener("click", function (e) {
         if (e.target === d) d.close();
