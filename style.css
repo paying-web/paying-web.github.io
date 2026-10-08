@@ -17,8 +17,8 @@ nav a {
 }
 nav a:hover { background: #f8bbd0; color: white; }
 
-/* 內容區塊 */
-section { max-width: 700px; margin: 0 auto; padding: 60px 16px; }
+/* 內容區塊：文字左右對齊 */
+section { max-width: 700px; margin: 0 auto; padding: 60px 16px; text-align: justify; }
 h1 { color: #d6457a; }
 h2 { color: #d6457a; border-bottom: 2px solid #f8bbd0; padding-bottom: 6px; }
 #home { text-align: center; padding-top: 32px; }
@@ -33,6 +33,13 @@ h2 { color: #d6457a; border-bottom: 2px solid #f8bbd0; padding-bottom: 6px; }
   border-radius: 24px;
   margin: 0 auto 16px;
 }
+
+/* 關於我：emoji 列點 */
+.about-list { list-style: none; padding: 0; }
+.about-list li { display: flex; gap: 10px; margin-bottom: 16px; }
+.about-list .icon { flex-shrink: 0; font-size: 1.2em; line-height: 1.5; }
+.about-list strong { color: #d6457a; }
+
 /* 內文連結 */
 section a { color: #d6457a; text-decoration: none; border-bottom: 1px dashed #d6457a; }
 section a:hover { color: #f48fb1; border-bottom-style: solid; }
