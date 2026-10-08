@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的個人網站</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: sans-serif; margin: 0; line-height: 1.7; color: #333; }
+
+    /* 上方導覽列 */
+    nav {
+      position: sticky; top: 0;
+      background: #2563eb;
+      display: flex; justify-content: center; flex-wrap: wrap; gap: 8px;
+      padding: 12px;
+    }
+    nav a {
+      color: white; text-decoration: none;
+      padding: 8px 16px; border-radius: 6px;
+    }
+    nav a:hover { background: rgba(255,255,255,0.2); }
+
+    /* 每個區塊 */
+    section { max-width: 700px; margin: 0 auto; padding: 60px 16px; }
+    h2 { color: #2563eb; border-bottom: 2px solid #2563eb; padding-bottom: 6px; }
+    #home { text-align: center; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">首頁</a>
+    <a href="#about">關於我</a>
+    <a href="#resume">個人履歷</a>
+    <a href="#works">作品集</a>
+    <a href="#contact">聯絡我</a>
+  </nav>
+
+  <section id="home">
+    <h1>你的名字</h1>
+    <p>一句話介紹自己，例如：對心理學與人的故事充滿好奇的學生。</p>
+  </section>
+
+  <section id="about">
+    <h2>關於我</h2>
+    <p>在這裡寫你的個性、興趣和目標。</p>
+  </section>
+
+  <section id="resume">
+    <h2>個人履歷</h2>
+    <h3>學歷</h3>
+    <ul>
+      <li>○○大學 ○○學系（20XX – 20XX）</li>
+    </ul>
+    <h3>經歷</h3>
+    <ul>
+      <li>○○ 實習／助理（20XX）</li>
+    </ul>
+    <h3>技能</h3>
+    <ul>
+      <li>例如：Python、SPSS、英文</li>
+    </ul>
+  </section>
+
+  <section id="works">
+    <h2>作品集</h2>
+    <p>放你做過的報告、專題或作品。</p>
+  </section>
+
+  <section id="contact">
+    <h2>聯絡我</h2>
+    <p>Email：your@email.com</p>
+  </section>
+
+</body>
+</html>
