@@ -141,3 +141,14 @@ section a:hover { color: #f48fb1; border-bottom-style: solid; }
 .gallery img { width: 100%; height: auto; border-radius: 12px; }
 .dropdown summary:focus { outline: none; }
 .dropdown summary:focus-visible { outline: 2px solid #f8bbd0; }
+
+/* 頁尾 */
+footer {
+  text-align: center;
+  padding: 24px 16px 32px;
+  margin-top: 40px;
+  border-top: 1px solid #f8bbd0;
+  font-size: 0.85em;
+  color: #9a7f88;
+}
+footer p { margin: 0; }
