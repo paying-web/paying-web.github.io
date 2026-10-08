@@ -19,6 +19,41 @@
 
   <section>
     <h2>閱讀心得</h2>
+    <p>點選書本封面，看看我的閱讀心得 📚</p>
+
+    <!-- 書本封面區 -->
+    <div class="bookshelf">
+
+      <button class="book-cover" onclick="document.getElementById('book1').showModal()">
+        <img src="book1.jpg" alt="書名">
+        <span>書名</span>
+      </button>
+
+    </div>
+
+    <!-- 心得視窗：每本書一個 -->
+    <dialog id="book1" class="book-dialog">
+      <h3>書名</h3>
+      <p class="book-info">作者：○○○｜閱讀日期：2026/10</p>
+      <p>在這裡寫你的心得。</p>
+      <form method="dialog"><button class="close-btn">關閉</button></form>
+    </dialog>
+
+  </section>
+
+  <script>
+    // 點視窗外面也能關閉
+    document.querySelectorAll("dialog").forEach(function (d) {
+      d.addEventListener("click", function (e) {
+        if (e.target === d) d.close();
+      });
+    });
+  </script>
+
+</body>
+</html>
+  <section>
+    <h2>閱讀心得</h2>
 
     <div class="book">
       <h3>書名</h3>
