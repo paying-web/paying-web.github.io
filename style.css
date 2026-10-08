@@ -139,3 +139,5 @@ section a:hover { color: #f48fb1; border-bottom-style: solid; }
   margin-top: 16px;
 }
 .gallery img { width: 100%; height: auto; border-radius: 12px; }
+.dropdown summary:focus { outline: none; }
+.dropdown summary:focus-visible { outline: 2px solid #f8bbd0; }
