@@ -23,6 +23,13 @@ h1 { color: #d6457a; }
 h2 { color: #d6457a; border-bottom: 2px solid #f8bbd0; padding-bottom: 6px; }
 #home { text-align: center; padding-top: 32px; }
 
+/* 閱讀心得：星星 */
+.book-cover .stars { margin-top: 2px; font-size: 0.85em; letter-spacing: 1px; }
+
+/* 關閉視窗後，封面不要出現黑色外框 */
+.book-cover:focus { outline: none; }
+.book-cover:focus-visible { outline: 2px solid #f8bbd0; border-radius: 12px; }
+
 /* 照片：原本比例、圓角方形，高度不超過螢幕的一半 */
 .photo {
   display: block;
